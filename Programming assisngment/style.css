@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/images/banner02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(121, 121, 121, 0.199);
+}
+.topnav {
+  margin-left: auto;
+  overflow: hidden;
+  background-color: rgba(77, 77, 77, 0);
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.loginBackground {
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 5px;
+  background-color: #e6e6e665;
+  padding: 40px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+/* input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+.inputFields {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: 48px;
+  color: rgb(100, 237, 180);
+}
+
+.inputFields label {
+  width: 120px;
+  font-size: 27px;
+  display: inline-block;
+}
+
+.mainText {
+  font-size: 27px !important;
+  text-align: center;
+  color: cornflowerblue;
+  
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.mainText a {
+  font-size: 27px !important;
+}
+
+.SecondTitle {
+  font-size: 48px !important;
+  text-align: center;
+  color: cornflowerblue;
+}
+.movieTitle {
+  color: cornflowerblue;
+}
+
+/* Inputs and buttons */
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+}
+
+.btn-grad {
+  border: none;
+  width: 300px;
+  margin: 10px auto;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 28px;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Booking Page */
+.movie-poster {
+  max-width: 250px;
+}
+
+.seat {
+  height: 40px;
+  width: 40px;
+  margin: 5px 10px 5px 10px;
+  display: inline-block;
+  
+  background-image: url('/assets/images/seat/seat01-free.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.available {
+  background-color: rgba(128, 128, 128, 0);
+}
+
+.available:hover {
+    background-image: url('/assets/images/seat/seat01-selected.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  cursor: pointer;
+}
+
+.selected {
+    background-image: url('/assets/images/seat/seat01-selected.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  cursor: pointer;
+}
+
+.unavailable {
+    background-image: url('/assets/images/seat/seat01-booked.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.book-seats-container button {
+  font-size: 1.2em;
+}
+
+.book-tickets-wrapper {
+  background-color: rgba(61, 61, 61, 0.4);
+  width: fit-content;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+
+.bookings-wrapper {
+  background-color: rgba(61, 61, 61, 0.4);
+  color: white;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 5px;
+}
+
+.bookings {
+    
+  font-weight: bold;
+  font-size: large;
+}
+
+.bookings h1 {
+  color: rgb(67, 216, 204);
+}
+
+.order img {
+  max-height: 220px;
+}
+
+.order td {
+    color: #3af0ad;
+  vertical-align: top;
+  padding: 5px 5px;
+}
+
+.cancel-td {
+  vertical-align: middle !important;
+}
+
+.cancel-td button {
+  background: red;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.cancel-td button:hover {
+  cursor: pointer;
+}
+
+.order-info {
+  margin-right: 20px;
+}
+/* for screening */
+.screenings .movieContainer {
+  background-color: #1f2c50e8;
+  padding: 30px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.screenings img {
+  width: 100%;
+}
+
+.screenings h1 {
+  color: #fffdfd;
+}
+.screenings h2 {
+    color: #fffdfd;
+    font-size: 20px;
+  }
+.screenings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: max-content;
+  margin: 0 auto;
+}
+.screening-title {
+  color: rgb(100, 237, 230);
+  font-size: 45px !important;
+  text-align: center;
+}
